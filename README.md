@@ -19,12 +19,15 @@ let src = "my picture";
 ></PreviewCard>
 ```
 
+
 Exposed Events:
+
 Event | Description
 -- | --
 `on:open` | When the card is clicked
 
 Optional settings:
+
 Param | Description | Type
 --- | --- | ---
 `background_source` | Source for the card's image, defaults to none | String
