@@ -41,3 +41,4 @@ Param | Description | Type
 ## Links
 
 [Github](https://github.com/Linkcube/svelte-preview-card)
+[NPM](https://www.npmjs.com/package/svelte-preview-card)

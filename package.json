@@ -21,7 +21,7 @@
     "dist"
   ],
   "description": "Simple card to display a title and background image, has an open event dispatcher.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {},
   "repository": {
     "type": "git",
