@@ -8,7 +8,7 @@
     export let active_color = "lightgrey";
     export let focus_color = background_color;
     export let primary_text_color = "black";
-    export let sub_text_color = "lightgrey";
+    export let sub_text_color = "grey";
     export let disabled = false;
 
     const dispatch = createEventDispatcher();
@@ -33,7 +33,9 @@
         cursor: pointer;
         border: none;
         outline:none;
-        background: var(--background_color)
+        background: var(--background_color);
+        line-height: 1em;
+        padding: 0px;
         
     }
 
@@ -71,24 +73,27 @@
         outline: 1px solid transparent;
     }
 
-    .primary_text {
+    .primary-text {
         text-align: center;
         color: var(--primary-color);
         font-size: 20px;
     }
 
-    .date {
+    .sub-text {
         text-align: center;
         color: var(--primary-color);
     }
 
     .footer {
         margin: auto;
+        width: 220px;
+        line-height: 1.5em;
     }
 
     .hover {
         margin-top: auto;
         margin-bottom: auto;
+        width: 220px;
     }
 
 </style>
@@ -101,10 +106,10 @@
     {/if}
     <div class="footer">
         {#if primary_text}
-            <div class="primary_text" style="--primary-color:{primary_text_color}">{primary_text}</div>
+            <div class="primary-text" style="--primary-color:{primary_text_color}">{primary_text}</div>
         {/if}
         {#if sub_text}
-            <div class="date" style="--primary-color:{sub_text_color}">{sub_text}</div>
+            <div class="sub-text" style="--primary-color:{sub_text_color}">{sub_text}</div>
         {/if}
     </div>
 </button>
